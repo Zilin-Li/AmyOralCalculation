@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <title>Amy's Oral Calculation</title>
+</head>
+<body>
+  <div id = "app1">
+    <!-- <child ref="child"></child>
+  <button @click="callChildMethod">
+    callChildMethod
+  </button> -->
+
+
+  <input type="button" @click="refresh" value="Operation within 10">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th colspan="5">Operation within 10</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for = "c in 20" >
+        <td v-for="n in 5"><mycom1 v-if="reload"></mycom1></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <template id="temp1">
+    <h4>{{num1}} {{opt}} {{num2}} =  </h4>
+  </template>
+</body>
+</html>
+<script src="Vue.js"></script>
